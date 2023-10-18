@@ -1,7 +1,16 @@
-*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } html { font-family: sans-serif; }
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
 
 * {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 body {
@@ -37,13 +46,18 @@ body {
     font-size: 10vw;
 }
 
+.lightbulb:hover {
+    cursor: pointer;
+}
+
 .active {
     background: white;
     transform: scale(1.1);
     box-shadow: 0 0 35px white;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
     color: white;
     text-align: center;
 }
