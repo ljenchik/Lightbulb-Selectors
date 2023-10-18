@@ -15,16 +15,16 @@ for (const bulb of bulbs) {
             subtitle.innerHTML =
                 "You've clicked the lights " + count + " times";
         }
-        bulb.classList.toggle("active");
+        this.classList.toggle("active");
     });
 }
 
 bulbs[0].addEventListener("click", function () {
     count++;
     if (count === 1) {
-        subtitle.innerHTML = "You've clicked the lights " + count + " time";
+        subtitle.innerHTML = `You've clicked the lights ${count} time`;
     } else {
-        subtitle.innerHTML = "You've clicked the lights " + count + " times";
+        subtitle.innerHTML = `You've clicked the lights ${count} times`;
     }
     bulbs[1].classList.toggle("active");
     bulbs[5].classList.toggle("active");
