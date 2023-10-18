@@ -19,6 +19,17 @@ for (const bulb of bulbs) {
     });
 }
 
+bulbs[0].addEventListener("click", function () {
+    count++;
+    if (count === 1) {
+        subtitle.innerHTML = "You've clicked the lights " + count + " time";
+    } else {
+        subtitle.innerHTML = "You've clicked the lights " + count + " times";
+    }
+    bulbs[1].classList.toggle("active");
+    bulbs[5].classList.toggle("active");
+});
+
 // lightbulb1.addEventListener("click", function () {
 //     count++;
 //     subtitle.innerHTML = "You've clicked the lights " + count + " times";
